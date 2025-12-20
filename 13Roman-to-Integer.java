@@ -12,7 +12,7 @@ public class Solution {
                 if (cur < next) {
                     ans = ans - cur;   
                 } else {
-                    ans += cur;   
+                    ans = ans + cur;   
                 }
             } else {
                 ans += cur;       
@@ -30,7 +30,7 @@ public class Solution {
         if (c == 'L') return 50;
         if (c == 'C') return 100;
         if (c == 'D') return 500;
-        
-        if(c == 'M') return 1000;
+        if (c == 'M') return 1000;
+        return 0;
     }
 }
