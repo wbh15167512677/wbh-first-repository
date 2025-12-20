@@ -4,12 +4,13 @@ public class Solution {
 
         for (int i = 0; i < s.length(); i++) {
             int cur = value(s.charAt(i));
+//change the java
 
             
             if (i + 1 < s.length()) {
                 int next = value(s.charAt(i + 1));
                 if (cur < next) {
-                    ans -= cur;   
+                    ans = ans - cur;   
                 } else {
                     ans += cur;   
                 }
@@ -30,6 +31,6 @@ public class Solution {
         if (c == 'C') return 100;
         if (c == 'D') return 500;
         
-        return 1000;
+        if(c == 'M') return 1000;
     }
 }
