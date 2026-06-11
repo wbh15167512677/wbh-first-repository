@@ -5,7 +5,11 @@ class Solution {
 
         int[] dp = new int[n];
 
-        dp[0] = obstacleGrid[0][0] == 1 ? 0 : 1;
+        if (obstacleGrid[0][0] == 1) {
+           dp[0] = 0;
+        } else {
+           dp[0] = 1;
+        }
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
