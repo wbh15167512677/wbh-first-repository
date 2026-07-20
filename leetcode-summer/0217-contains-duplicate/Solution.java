@@ -6,12 +6,9 @@ class Solution {
         Set<Integer> seen = new HashSet<>();
 
         for (int num : nums) {
-            // If num already exists, we found a duplicate
-            if (seen.contains(num)) {
+            if (!seen.add(num)) {
                 return true;
             }
-
-            seen.add(num);
         }
 
         return false;
